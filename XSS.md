@@ -25,10 +25,6 @@
 
 ### A Tag
 ```html
-<a href="javascript:alert(1)>
+<a href="javascript:alert(1)">
 ```
 
-### Css src
-```html
-<a href="javascript:alert(1)>
-```
