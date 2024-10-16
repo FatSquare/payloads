@@ -1,10 +1,41 @@
-### Categories
+# Sub dommain scanning 
+
+```
+subfinder -d example.org
+amass -d example.org
+```
+
+# Port scanning
+
+```
+nmap -sV example.org
+```
+
+# Proxy tool
+```
+burpsuite
+caido
+```
+
+# Automated fuzzing
+```
+trickest
+zaproxy
+```
+
+# URL fuzzing
+
+```
+ffuf
+```
 
 
-1. [Template Injections](https://github.com/FatSquare/payloads/blob/main/template_injections.md)
+## Extra tools
 
-2. [XSS](https://github.com/FatSquare/payloads/blob/main/XSS.md)
+Find javascript files: https://github.com/GerbenJavado/LinkFinder<br>
+sqlmap: https://github.com/sqlmapproject/sqlmap<br>
+xsstrike: https://github.com/s0md3v/XSStrike<br>
 
-3. [SQL Injection]()
 
-4. [Reverse Shell]()
+## Learning ressources
+Just search any topic in https://book.hacktricks.xyz/
