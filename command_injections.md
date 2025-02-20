@@ -23,6 +23,10 @@ echo $(tr '!-}' '"-~'<<<[) # this will result in \
 ```bash
 $(echo	${PATH:0:1})
 ```
+#### words blacklist
+```
+ca$(echo "t") # cat
+```
 
 <hr>
 
