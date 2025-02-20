@@ -1,7 +1,9 @@
 ### BASH OBFUSCATORS
 
-#### Linux (Bashfuscator)
-#### Windows (DOSfuscation)
+Linux (Bashfuscator)<br>
+Windows (DOSfuscation)
+
+<hr>
 
 ### Use new-line instead of ; or &
 #### Example: 
