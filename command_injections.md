@@ -26,6 +26,7 @@ $(echo	${PATH:0:1})
 #### words blacklist
 ```
 ca$(echo "t") # cat
+ca$@t # cat
 ```
 
 <hr>
