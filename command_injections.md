@@ -27,6 +27,7 @@ $(echo	${PATH:0:1})
 ```
 ca$(echo "t") # cat
 ca$@t # cat
+ca"t" # cat
 ```
 
 <hr>
