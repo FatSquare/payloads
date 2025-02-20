@@ -1,3 +1,8 @@
+### BASH OBFUSCATORS
+
+#### Linux (Bashfuscator)
+#### Windows (DOSfuscation)
+
 ### Use new-line instead of ; or &
 #### Example: 
 ```bash
