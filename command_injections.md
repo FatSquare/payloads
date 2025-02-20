@@ -25,9 +25,10 @@ $(echo	${PATH:0:1})
 ```
 #### words blacklist
 ```
-ca$(echo "t") # cat
-ca$@t # cat
-ca"t" # cat
+wh$(echo "am")i # whoami
+whoa$@mi # whoami
+who"a"mi # whoami
+$(tr "[0-9]" "\0"<<<"who420ami") # whoami
 ```
 
 <hr>
