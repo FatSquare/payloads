@@ -38,4 +38,4 @@ xsstrike: https://github.com/s0md3v/XSStrike<br>
 
 
 ## Learning ressources
-Just search any topic in https://book.hacktricks.xyz/
+Just search any topic in [hacktricks](https://www.hacktricks.wiki/)
